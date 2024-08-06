@@ -1,21 +1,18 @@
-function compare()
-{
-    const name1="Kabil";
-    const name2="Kabil";
-    const object1={name:"Kabil"};
-    const object2={name:"Kabil"};
-    console.log(name1===name2);
-    console.log(name1===object1);
-    console.log(object1===object2);
-}
-function Equal()
-{
-    return(
-        <div>
-        <h1>Let we see the output of JAVASCRIPT</h1>
-        <button onClick={compare}>Click</button>
-        </div>
-    );
+import React from 'react';
+const Comp=() =>{
+  return(
+    <div 
+        style={{display:'flex',
+        flexDirection:'column',
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:'lightskyblue'}}>
+      <h1 >Smile Component</h1>
+      <p >It is a functional component</p>
+      <img src="https://cdn.pixabay.com/photo/2020/12/27/20/24/smile-5865208_640.png">
+      </img>
+    </div>
+    
+  );
 };
-export default Equal;
-
+export default Comp;
