@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "John Doe",
+      "email": "john.doe@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "319b",
+      "fullName": "Meera",
+      "email": "meera@gmail.com",
+      "password": "3378"
+    },
+    {
+      "id": "9102",
+      "fullName": "suba",
+      "email": "suba@gmail.com",
+      "password": "3456"
+    },
+    {
+      "id": "453c",
+      "fullName": "suba",
+      "email": "suba@gmail.com",
+      "password": "3456"
+    }
+  ],
+  "students": [
+    {
+      "id": "3724",
+      "name": "Krishna",
+      "age": "19",
+      "classLevel": "B.E CSE",
+      "department": "Computer Science Engineering",
+      "year": "2nd",
+      "updatedTime": "25/10/2024, 9:26:19 pm"
+    },
+    {
+      "id": "57cd",
+      "name": "Meera",
+      "age": "18",
+      "classLevel": "B.E IT",
+      "department": "Information Technology",
+      "year": "2nd",
+      "updatedTime": "4/11/2024, 4:47:58 pm"
+    },
+    {
+      "id": "5f44",
+      "name": "suba",
+      "age": "18",
+      "classLevel": "btech",
+      "department": "It",
+      "year": "2nd",
+      "updatedTime": "5/11/2024, 5:38:42 pm"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": "6105",
+      "name": "Meera",
+      "email": "meera@gmail.com",
+      "phone": "8610077020",
+      "dob": "2006-06-03",
+      "query": "Good experience user friendly"
+    }
+  ]
+}
