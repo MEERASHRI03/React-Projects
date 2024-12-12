@@ -1,0 +1,81 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StudentGradeTracker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Double> grades = new ArrayList<>();
+        boolean running = true;
+
+        System.out.println("Student Grade Tracker");
+        System.out.println("=====================");
+
+        while (running) {
+            System.out.println("1. Add a grade");
+            System.out.println("2. View grades");
+            System.out.println("3. Calculate average");
+            System.out.println("4. Find highest grade");
+            System.out.println("5. Find lowest grade");
+            System.out.println("6. Exit");
+            System.out.print("Choose an option: ");
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter grade: ");
+                    double grade = scanner.nextDouble();
+                    grades.add(grade);
+                    System.out.println("Grade added.\n");
+                    break;
+                case 2:
+                    System.out.println("Grades: " + grades + "\n");
+                    break;
+                case 3:
+                    System.out.println("Average grade: " + calculateAverage(grades) + "\n");
+                    break;
+                case 4:
+                    System.out.println("Highest grade: " + findHighest(grades) + "\n");
+                    break;
+                case 5:
+                    System.out.println("Lowest grade: " + findLowest(grades) + "\n");
+                    break;
+                case 6:
+                    running = false;
+                    System.out.println("Exiting program...");
+                    break;
+                default:
+                    System.out.println("Invalid option. Please try again.\n");
+            }
+        }
+        scanner.close();
+    }
+
+    public static double calculateAverage(ArrayList<Double> grades) {
+        if (grades.isEmpty()) return 0;
+        double sum = 0;
+        for (double grade : grades) {
+            sum += grade;
+        }
+        return sum / grades.size();
+    }
+    public static double findHighest(ArrayList<Double> grades) {
+        if (grades.isEmpty()) return 0;
+        double highest = grades.get(0);
+        for (double grade : grades) {
+            if (grade > highest) {
+                highest = grade;
+            }
+        }
+        return highest;
+    }
+    public static double findLowest(ArrayList<Double> grades) {
+        if (grades.isEmpty()) return 0;
+        double lowest = grades.get(0);
+        for (double grade : grades) {
+            if (grade < lowest) {
+                lowest = grade;
+            }
+        }
+        return lowest;
+    }
+}
